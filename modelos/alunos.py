@@ -1,12 +1,15 @@
 class Aluno:
-    nome = ''
-    idade = ''
-    turno = ''
-    matricula = False
-    
-aluno_Reis = Aluno()
-aluno_Bia  = Aluno()
+    def __init__(self, nome, idade, turno):
+        self.nome = nome
+        self.idade = idade
+        self.turno = turno
+        self.matricula = False
 
-alunos = (aluno_Reis, aluno_Bia)
+aluno_Reis = Aluno('Eduardo', '17', 'Manha')
+aluno_Bia = Aluno('Bia', '17', 'Tarde')
 
-print(alunos)       
+aluno_Reis.nome = 'Reis'
+aluno_Bia.nome = 'Bia'
+
+alunos = [aluno_Reis, aluno_Bia]
+
